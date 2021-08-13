@@ -47,3 +47,36 @@ function my_keydown(e){
         down();
     }
 }
+
+function right() {
+ if (rover_x<=700) {
+   rover_x+=10;
+  uploadbackground();
+uploadrover();
+ }   
+}
+
+function left(){
+if (rover_x>=0) {
+   rover_x-=10;
+   uploadbackground();
+       uploadrover();
+   
+}
+}
+
+function up() {
+   if (rover_y>=0) {
+    rover_y-=10;
+    uploadbackground();
+    uploadrover();
+   } 
+}
+
+function down()  {
+    if (rover_y<=500) {
+      rover_y+=10;
+      uploadbackground();
+      uploadrover();
+    }
+}
